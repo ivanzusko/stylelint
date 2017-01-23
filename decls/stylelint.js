@@ -12,7 +12,7 @@ export type stylelint$config = {
   extends?: stylelint$configExtends,
   plugins?: stylelint$configPlugins,
   pluginFunctions?: {
-    [pluginName: string]: Function
+    [pluginName: string]: Function,
   },
   processors?: stylelint$configProcessors,
   processorFunctions?: Array<Function>,
@@ -21,7 +21,7 @@ export type stylelint$config = {
   rules?: stylelint$configRules,
   codeProcessors?: Array<Function>,
   resultProcessors?: Array<Function>,
-  quiet?: boolean
+  quiet?: boolean,
 }
 
 export type stylelint$syntaxes = "scss" | "less" | "sugarss"
